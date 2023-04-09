@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-p+vw7xi98d7&3u(l-_63$(vbrta(l(bsauo1mv49#2ndzqzx7%'
+SECRET_KEY = 'SECRETKEY'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'helloworld.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/home/javed_tech/codingadventures.space/helloworld/my_app/templates/'],
+        'DIRS': ['/home/javed_tech/codingadventures.space/helloworld/templates/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -78,8 +78,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'codingadventures_db',
-        'USER': SECRET_KEY,
-        'PASSWORD': SECRET_KEY,
+        'USER': 'SECRETKEY',
+        'PASSWORD': 'SECRETKEY',
         'HOST': 'mysql.codingadventures.space',
         'PORT': '3306',
 

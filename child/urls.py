@@ -20,7 +20,7 @@ from .views import HomePageView
 
 
 urlpatterns = [
-    path('', views.hello_world, name='hello_world'),
+    path('', views.hello_world, name='hello_world'),        # https://realpython.com/get-started-with-django-1/
     path('coolstuff', views.elaborate_html, name="elaborate"),
     path('nice', views.nice_html, name="nice_stuff"),
     path('test', HomePageView.as_view(), name="home"),      # https://djangoforbeginners.com/message-board/
