@@ -24,4 +24,6 @@ urlpatterns = [
     path('coolstuff', views.elaborate_html, name="elaborate"),
     path('nice', views.nice_html, name="nice_stuff"),
     path('test', HomePageView.as_view(), name="home"),      # https://djangoforbeginners.com/message-board/
+    path("project", views.project_index, name="project_index"),
+    path("<int:pk>/", views.project_detail, name="project_detail"),
 ]
