@@ -1,7 +1,14 @@
 <!-- templates/home.html -->
+{% extends "base.html" %}
+
+{% block page_content %}
+
+
 <h1>Message board homepage</h1>
 <ul>
   {% for post in post_list %}
     <li>{{ post.text }}</li>
   {% endfor %}
 </ul>
+
+{% endblock %}
